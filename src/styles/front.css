@@ -1,0 +1,55 @@
+
+  /* Poppins */
+  @font-face {
+    font-family: 'Poppins';
+    src: local('PoppinsRegular'),
+      url('../assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: 'Poppins';
+    src: local('PoppinsMedium'),
+      url('../assets/fonts/Poppins/Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: local('PoppinsBold'), url('../assets/fonts/Poppins/Poppins-Bold.ttf');
+    font-weight: 700;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: local('PoppinsSemiBold'), url('../assets/fonts/Poppins/Poppins-SemiBold.ttf');
+    font-weight: 600;
+  }
+  /* Poppins */
+  
+  /* Mulish */
+  @font-face {
+    font-family: 'Mulish';
+    src: local('MulishRegular'),
+      url('../assets/fonts/Mulish/Mulish-Regular.ttf') format('truetype');
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: 'Mulish';
+    src: local('MulishMedium'),
+      url('../assets/fonts/Mulish/Mulish-Medium.ttf') format('truetype');
+    font-weight: 500;
+  }
+  
+  @font-face {
+    font-family: 'Mulish';
+    src: local('MulishBold'), url('../assets/fonts/Mulish/Mulish-Bold.ttf');
+    font-weight: 700;
+  }
+  
+  @font-face {
+    font-family: 'Mulish';
+    src: local('MulishSemiBold'), url('../assets/fonts/Mulish/Mulish-SemiBold.ttf');
+    font-weight: 600;
+  }
+  /* Mulish */
+  
