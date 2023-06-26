@@ -25,7 +25,7 @@ export const HeaderIntro = () => {
           maxWidth: '100%',
           width: '100%',
           height: '100%',
-          background: `red`,
+          background: `url(${images.bgfullHeader})`,
           backgroundSize: '100%',
           objectFit: 'cover',
           backgroundRepeat: 'no-repeat',
