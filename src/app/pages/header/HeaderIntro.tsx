@@ -1,27 +1,31 @@
 import { Box, Center, Flex, Stack, Text, createStyles } from '@mantine/core';
-import { useIntersection } from '@mantine/hooks';
+import { useIntersection, useMediaQuery } from '@mantine/hooks';
 import HeadNavMenu from 'app/components/HeadNavMenu/HeadNavMenu';
+import HeadernavMobile from 'app/components/HeadNavMenu/HeadernavMobile';
 import { ButtonIntro } from 'app/components/button/ButtonIntro';
 import { images } from 'assets/images';
 import React, { useRef } from 'react';
+import { sizes } from 'styles/media';
 
 interface InPropsStyle {}
 export const HeaderIntro = () => {
   const { classes: c } = createStyleProps({});
+  const mobile = useMediaQuery(`(max-width:${sizes.small}px)`);
   const containerRef = useRef();
   const { ref, entry } = useIntersection({
     root: containerRef.current,
     threshold: 0.6,
   });
+  console.log(mobile, 'thí í mobile');
   return (
     <Center className={c.boxHeader}>
-      <HeadNavMenu></HeadNavMenu>
+      {mobile ? <HeadernavMobile /> : <HeadNavMenu />}
       <Flex
         sx={{
           maxWidth: '100%',
           width: '100%',
           height: '100%',
-          background: `url(${images.bgfullHeader})`,
+          background: `red`,
           backgroundSize: '100%',
           objectFit: 'cover',
           backgroundRepeat: 'no-repeat',
